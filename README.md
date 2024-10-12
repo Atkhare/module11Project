@@ -11,46 +11,39 @@ The success criteria of this project are to identify the key features and create
 This project will utilize multiple Python packages & APIs and resources from open-source content to develop a model.
 
 #### Data Understanding
-After considering the business understanding, we want to get familiar with our data. Write down some steps that you would take to get to know the dataset and identify any quality issues within. Take time to get to know the dataset and explore what information it contains and how this could be used to inform your business understanding.
+This step is to get familiar with Data and identify any quality issues in the dataset. The focus will be on:
 
-In this section, the focus will be on
-
-Upload the vehicle dataset for analysis and model generation.
-Data analysis of numerical & categorical features and performing the quality check on attributes.
-Identify data incompleteness and attributes which is irrelevant due to missing data and can be dropped.
+1. Upload the vehicle dataset for analysis and model generation.
+2. Data analysis of numerical & categorical features and performing the quality check on attributes.
+3. Identify data incompleteness and attributes which is irrelevant due to missing data and can be dropped.
 
 #### Data Preparation
-After our initial exploration and fine-tuning of the business understanding, it is time to construct our final dataset before modeling. Here, we want to make sure to handle any integrity issues and cleaning, the engineering of new features, any transformations that we believe should happen (scaling, logarithms, normalization, etc.), and general preparation for modeling with sklearn.
 
 The following data cleanup exercise is done as per the previous data analysis & to prepare the data for Modelling:
 
-Drop the Identified columns due to the high percent of missing data or
-Drop the rows having more than 5 NAN columns
-Remove Junk characters from the datasets
-Use Data impute techniques to fill in missing data for both numeric & categorical fields
-Encode the data so that it can be executed in various models
-Scale the dataset and split the Test and Train datasets
-Analyze the dataset correlation between feature
-And run PCA against to analyze the dataset dimensionality
+1. Drop the Identified columns due to the high percent of missing data or
+2. Drop the rows having more than 5 NAN columns
+3. Remove Junk characters from the datasets
+4. Use Data impute techniques to fill in missing data for both numeric & categorical fields
+5. Encode the data so that it can be executed in various models
+6. Scale the dataset and split the Test and Train datasets
+7. Analyze the dataset correlation between feature
+8. And run PCA against to analyze the dataset dimensionality
 
 #### Modeling
-With your (almost?) final dataset in hand, it is now time to build some models. Here, you should build a number of different regression models with the price as the target. In building your models, you should explore different parameters and be sure to cross-validate your findings.
 
-Generated the following models to evaluate the Vehicle data frame
+After the data preparation, generate models to evaluate the price of used cars and compare the models.  
 
-Linear Regression with polynomial features and sequential feature selection
-Ride Regression Model with Lasso feature selector
-Linear regression Model with polynomial features and Lasso feature selection
-Lasso Regression Model with polynomial features
-Calculated the MSE on Test and Training datasets for comparison
-Final dataset for Modelling
+1. Linear Regression with polynomial features and sequential feature selection
+2. Ride Regression Model with Lasso feature selector
+3. Linear regression Model with polynomial features and Lasso feature selection
+4. Lasso Regression Model with polynomial features
+5. Calculated the MSE on Test and Training datasets for comparison
 
 #### Conclusion
 Evaluating the MSE based on Training & Test scaled data, the model Linear Regression with Lasso selector and polynomial features is giving better results compared to other Models. Therefore selecting this model for the final Car price evaluation and presenting it to Car dealers.
 
 #### Deployment
-Now that we've settled on our models and findings, it is time to deliver the information to the client. You should organize your work as a basic report that details your primary findings. Keep in mind that your audience is a group of used car dealers interested in fine-tuning their inventory.
-
 The key features to focus on by dealers which can give better prices on the car are :
 
 1. Car Manufacturer
