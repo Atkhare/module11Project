@@ -1,6 +1,6 @@
 # module11Project
 This is a Machine learning project for module 11. 
-The link to model code is - https://github.com/Atkhare/module11Project/blob/main/module11Project.html
+The link to model code is -(https://github.com/Atkhare/module11Project/blob/main/module11Project.ipynb)
 
 #### Business Understanding
 From a business perspective, we are tasked with identifying key drivers for used car prices. In the CRISP-DM overview, we are asked to convert this business framing to a data problem definition. Using a few sentences, reframe the task as a data task with the appropriate technical vocabulary.
